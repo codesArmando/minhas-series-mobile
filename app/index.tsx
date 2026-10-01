@@ -67,7 +67,11 @@ export default function Home() {
             <Text className="mt-10 text-center text-gray-500">Nenhuma série encontrada.</Text>
           )
         }
-        renderItem={({ item }) => <SerieCard serie={item} />}
+        renderItem={({ item }) => (
+          <TouchableOpacity onPress={() => router.push(`/detalhe?id=${item.id}`)}>
+            <SerieCard serie={item} />
+          </TouchableOpacity>
+        )}
       />
 
       <TouchableOpacity
