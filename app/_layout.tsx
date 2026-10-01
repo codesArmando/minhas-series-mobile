@@ -9,7 +9,9 @@ export default function RootLayout() {
         headerTintColor: '#ffffff',
       }}
     >
-      <Stack.Screen name="index" options={{ title: 'Tela de início' }} />
+      <Stack.Screen name="index" options={{ title: 'Minhas Series' }} />
+      <Stack.Screen name="form" options={{ title: 'Atualizar/Cadastrar Série' }} />
+      <Stack.Screen name="detalhe" options={{ title: 'Detalhes da Série' }} />
 
     </Stack>
   );
